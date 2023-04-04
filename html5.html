@@ -1,0 +1,299 @@
+
+<!-- Etiqueta tipo documento -->
+<!doctype html>
+
+<!-- Etiqueta inicio html + lenguaje de la página -->
+<html lang="es">
+    
+    <!-- 
+        HEAD:
+        - Título
+        - Etiquetas META (descripción,etc)
+        - Archivos externos en orden de necesidad para que se visualice la página de forma correcta:
+            - Archivos externos CSS
+            - Archivos externos JAVASCRIPTS
+        - CSS de la vista
+        - SCRIPTS de la vista
+    
+    -->
+
+  <head>
+    <!-- Favicon web -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+
+    <!-- Título de la web -->
+    <title>Pagina Web</title>
+    
+    <!-- Etiquetas META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS Externo -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+
+    <!-- Animación -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- JAVASCRIPT Externo -->
+
+    <!-- CSS de la vista -->
+    <style>
+       .fondoverde {background-color:lightseagreen;}
+       .fondonegro {background-color:aliceblue;}
+    </style>
+    
+    <!-- SCRIPTS de la vista -->
+    <script>
+
+    </script>
+  </head>
+
+  <!-- 
+    BODY:
+    - Contenido principal de la web
+    - Suele contener etiquetas comunes:
+        - HEADER
+        - NAV
+        - ASIDE
+        - SECTION
+        - ARTICLE
+        - DIV
+        - H1
+        - P
+        - A
+-->
+  <body>
+    
+    <nav class="container navbar navbar-expand-md navbar-dark bg-dark" aria-label="Navegación">
+
+      <div class="container-fluid">
+  
+       <a class="navbar-brand" href="#"><h1>MI WEB</h1></a>
+  
+       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+  
+        <span class="navbar-toggler-icon"></span>
+  
+       </button>
+  
+     
+  
+       <div class="navbar-collapse collapse" id="navbars">
+  
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+  
+         <li class="nav-item">
+  
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-igloo"></i> INICIO</a>
+  
+         </li>
+  
+         <li class="nav-item">
+  
+          <a class="nav-link" href="#CONTACTO"><i class="fa-solid fa-envelope"></i> CONTACTO</a>
+  
+         </li>
+  
+         <li class="nav-item">
+  
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  
+         </li>
+  
+        </ul>
+  
+       </div>
+  
+      </div>
+  
+     </nav>
+
+  
+    <section>
+      <div class="px-4 py-5  text-center fondoverde">
+        <img class="d-block mx-auto mb-4" src="assets/img/avataaars.svg" alt="" width="144" height="114">
+        <h2 class="animate__animated animate__bounce animate__repeat-2 display-5 fw-bold text-white text-center">Start Botatrampa</h2>
+        <div class="col-lg-6 mx-auto">
+          <i class="fa-solid fa-palette text-white display-7"></i>
+          <p class="lead mb-4 text-white">Diseño Grafico-Diseño artistico-Ilustrador</p>
+        </div>
+      </div>
+    </section>
+
+
+
+   <section>
+      <div class="album py-5 bg-light">
+        
+        <h2 class="display-5 fw-bold text-black text-center animate__animated animate__bounce animate__delay-2s">PortaFolio</h2>
+        <p class="lead mb-4 text-center"><i class="fa-solid fa-palette text-black display-7 fw-bold "></i></p>
+        <div class="container">
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="assets/img/portfolio/cabin.png ">
+  
+              
+            </div>
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/img/portfolio/cake.png">
+  
+              
+            </div>
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/img/portfolio/circus.png">
+  
+              
+            </div>
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/img/portfolio/game.png">
+  
+              
+            </div>
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/img/portfolio/safe.png">
+  
+              
+            </div>
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/img/portfolio/submarine.png">
+  
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+   </section>
+
+   <section class="fondoverde py-5 px-4">
+      <div class="container">
+        <div class="row">
+          <p class="offset-2 col-4" style="color:white; border-color: black;">El oeste de Texas divide la frontera entre Mexico y Nuevo México. Es muy bella pero aspera, llena de cactus, en esta region se encuentran las Davis Mountains. Todo el terreno esta lleno de piedra caliza, torcidos arboles de mezquite y espinosos nopales. Para admirar la verdadera belleza desertica, visite el Parque Nacional de Big Bend, cerca de Brownsville. Es el lugar favorito para los excurcionistas, acampadores y entusiastas de las rocas. Pequeños pueblos y ranchos se encuentran a lo largo de las planicies y cañones de esta region. El area solo tiene dos estaciones, tibia y realmente caliente. La mejor epoca para visitarla es de Diciembre a Marzo cuando los dias son tibios, las noches son frescas y florecen las plantas del desierto con la humedad en el aire.</p>
+          <p class="col-4" style="color:white; border-color: black;">La sociedad francesa estaba dividida en estamentos dependiendo de sus clases sociales, el poder mas alto lo tenía el rey, detrás estaban la nobleza y el clero y el nivel mas bajo de poder lo tenia el tercer estado que estaba constituido por la burguesía, los artesanos y los campesinos.
+            Los Estados Generales eran una asamblea, compuesta por tres ordenes separados: el clero, la nobleza y el grupo formado por burguesía y campesinado. Este último orden se conoce como el tercer estadeo, término que usaremos para referirnos a él en lo sucesivo. Dicha asamblea se había citado por ultima vez en 1614 y el dramatismo de la situación obligó al gobierno a convocarla nuevamente.
+            Luis XVI cedió a las presiones de la reina María Antonieta y del conde de Artois y dio instrucciones para que varios regimientos extranjeros leales se concentraran en París y Versailles. Al mismo tiempo, Necker fue nuevamente destituido. El pueblo de París respondió con la insurrección ante estos actos de provocación; los disturbios comenzaron el 12 de julio, y las multitudes asaltaron y tomaron La Bastilla -una prisión real que simbolizaba el despotismo de los Borbones- el 14 de julio.  
+            El 5 de octubre de 1789, las mujeres parisinas partieron desde los barrios obreros hacia la residencia real de Versailles, este suceso dió comienzo a la revolución.</p>
+        </div>
+        
+        <div class="row">
+          <button class="btn btn-success" style="border-color: aliceblue">Hacer Click</button>
+        </div>
+      </div>
+   </section>
+
+   <section id="contacto">
+    <main class="form-signin w-100 m-auto">
+      <form>
+        <img class="mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+        <h2 class="h3 mb-3 fw-normal">Contacto</h2>
+    
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="Nombre y Apellidos">
+          <label for="floatingInput">Nombre completo</label>
+        </div>
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Numero de Telefono</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Mensaje</label>
+        </div>
+    
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+      </form>
+    </main>
+   </section>
+
+   <section class="text-center py-5 px-4">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+          <small class="d-block mb-3 text-muted">© 2017–2022</small>
+        </div>
+        <div class="col-4 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-4 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-4 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+   </section>
+
+
+   
+    <script>
+    if ("loading" in HTMLImageElement.prototype) {
+      // Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
+      // `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
+      const images = document.querySelectorAll("img.lazyload");
+      images.forEach((img) => {
+        img.src = img.dataset.src;
+      });
+    } else {
+      // Importamos dinámicamente la libreria `lazysizes`
+      let script = document.createElement("script");
+      script.async = true;
+      script.src =
+        "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js";
+      document.body.appendChild(script);
+    }
+</script>
+  
+
+    <!-- SCRIPTS de la vista necesarios para su funcionamiento, pero no para su primera visualización -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Cierre etiquetas BODY+HTML -->
+  </body>
+</html>
